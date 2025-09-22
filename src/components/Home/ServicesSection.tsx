@@ -12,6 +12,8 @@ import {
   TrendingUp,
   Users
 } from 'lucide-react';
+import servicesRealEstate from '@/assets/services-real-estate.jpg';
+import servicesBanking from '@/assets/services-banking.jpg';
 
 const ServicesSection = () => {
   const { t } = useLanguage();
@@ -34,12 +36,14 @@ const ServicesSection = () => {
     {
       icon: Building,
       title: 'Individual & Corporate Banking Setup',
-      description: 'Fast-track account opening with Millennium BCP, Novo Banco, Santander. Pre-arranged English-speaking relationship managers. Accounts ready in 5-7 business days.'
+      description: 'Fast-track account opening with Millennium BCP, Novo Banco, Santander. Pre-arranged English-speaking relationship managers. Accounts ready in 5-7 business days.',
+      image: servicesBanking
     },
     {
       icon: Home,
       title: 'Real Estate Guidance',
-      description: 'Golden Visa compliant properties across Lisbon, Porto, Algarve, Cascais. Off-market deals, developer inventory, rental yield assessment. Full lifecycle support from search to registration.'
+      description: 'Golden Visa compliant properties across Lisbon, Porto, Algarve, Cascais. Off-market deals, developer inventory, rental yield assessment. Full lifecycle support from search to registration.',
+      image: servicesRealEstate
     },
     {
       icon: TrendingUp,
@@ -81,19 +85,30 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {services.map((service, index) => {
             const IconComponent = service.icon;
+            const isImageService = service.image;
             return (
-              <Card key={index} className="hover:shadow-xl hover:scale-105 transition-all duration-300 group border-0 bg-gradient-to-br from-card via-card to-card/90 shadow-lg">
-                <CardHeader>
-                  <div className="w-14 h-14 bg-gradient-to-br from-primary via-ocean to-primary/80 rounded-xl flex items-center justify-center mb-4 shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-                    <IconComponent className="w-7 h-7 text-white" />
+              <Card key={index} className="hover:shadow-xl hover:scale-105 transition-all duration-300 group border-0 bg-gradient-to-br from-card via-card to-card/90 shadow-lg overflow-hidden">
+                {isImageService && (
+                  <div className="h-32 relative overflow-hidden">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:opacity-0 transition-opacity duration-500"></div>
                   </div>
-                  <CardTitle className="text-xl text-foreground group-hover:text-primary transition-colors duration-300">{service.title}</CardTitle>
+                )}
+                <CardHeader>
+                  <div className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-primary via-ocean to-primary/80 rounded-xl flex items-center justify-center mb-4 shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                    <IconComponent className="w-6 h-6 md:w-7 md:h-7 text-white" />
+                  </div>
+                  <CardTitle className="text-lg md:text-xl text-foreground group-hover:text-primary transition-colors duration-300">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-muted-foreground">
+                  <CardDescription className="text-sm md:text-base text-muted-foreground">
                     {service.description}
                   </CardDescription>
                 </CardContent>
