@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommuniQ - Your Portugal Journey Starts Here</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Expert Portugal immigration and relocation services. From visa applications to full settlement, we guide you through every step of your journey to Portugal.">
+    <meta name="keywords" content="Portugal visa, Golden visa, D7 visa, Portugal immigration, Portugal relocation">
+    <meta name="author" content="CommuniQ">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="CommuniQ - Your Portugal Journey Starts Here" />
+    <meta property="og:description" content="Expert Portugal immigration and relocation services. From visa applications to full settlement, we guide you through every step of your journey to Portugal." />
+    <meta property="og:type" content="website" />
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="flag-icon">
+                        <svg viewBox="0 0 600 400" class="flag-svg">
+                            <rect width="600" height="400" fill="transparent"/>
+                            <rect width="240" height="400" fill="#DA020E"/>
+                            <rect x="240" width="360" height="400" fill="#046A38"/>
+                            <circle cx="240" cy="200" r="50" fill="#FFE900" stroke="#046A38" stroke-width="3"/>
+                        </svg>
+                    </div>
+                    <span class="logo-text">CommuniQ</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="visas.html" class="nav-link">Visas</a>
+                    <a href="investment.html" class="nav-link">Investment</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Language Selector & Mobile Menu -->
+                <div class="header-actions">
+                    <div class="language-selector">
+                        <button class="language-btn" onclick="toggleLanguageMenu()">
+                            <i class="fas fa-globe"></i>
+                            <span class="language-text">English</span>
+                        </button>
+                        <div class="language-menu" id="languageMenu">
+                            <a href="#" onclick="setLanguage('en')" class="language-option">
+                                <span>🇺🇸</span>
+                                <span>English</span>
+                            </a>
+                            <a href="#" onclick="setLanguage('az')" class="language-option">
+                                <span>🇦🇿</span>
+                                <span>Azərbaycan</span>
+                            </a>
+                            <a href="#" onclick="setLanguage('ru')" class="language-option">
+                                <span>🇷🇺</span>
+                                <span>Русский</span>
+                            </a>
+                            <a href="#" onclick="setLanguage('pt')" class="language-option">
+                                <span>🇵🇹</span>
+                                <span>Português</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars" id="menuIcon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile" id="mobileNav">
+                <nav class="mobile-nav-links">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+                    <a href="services.html" class="mobile-nav-link">Services</a>
+                    <a href="visas.html" class="mobile-nav-link">Visas</a>
+                    <a href="investment.html" class="mobile-nav-link">Investment</a>
+                    <a href="education.html" class="mobile-nav-link">Education</a>
+                    <a href="contact.html" class="mobile-nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Your Trusted Guide to Portugal</h1>
+                    <p class="hero-subtitle">Expert immigration and relocation services to make your Portugal journey seamless and successful</p>
+                    <button class="hero-cta" onclick="window.location.href='contact.html'">
+                        Start Your Journey
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Facts Cards -->
+            <div class="facts-cards">
+                <div class="fact-card">
+                    <i class="fas fa-shield-alt fact-icon"></i>
+                    <span class="fact-text">#3 Safest Country</span>
+                </div>
+                <div class="fact-card">
+                    <i class="fas fa-heart fact-icon"></i>
+                    <span class="fact-text">#7 Most Welcoming</span>
+                </div>
+                <div class="fact-card">
+                    <i class="fas fa-globe fact-icon"></i>
+                    <span class="fact-text">EU Membership</span>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="scroll-animation"></div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Comprehensive support for your Portugal journey</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="service-title">Educational Guidance</h3>
+                        <p class="service-description">Find the perfect international schools and universities for your family's education needs</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="service-title">Healthcare Access</h3>
+                        <p class="service-description">Navigate Portugal's healthcare system with confidence and comprehensive support</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="service-title">Real Estate</h3>
+                        <p class="service-description">Discover Golden Visa eligible properties and investment opportunities</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3 class="service-title">Banking & Finance</h3>
+                        <p class="service-description">Complete banking setup and mortgage facilitation for your new life in Portugal</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">World-Class Education</h2>
+                    <p class="section-subtitle">Premium international schools and top universities</p>
+                </div>
+                
+                <div class="education-grid">
+                    <div class="education-card">
+                        <img src="src/assets/university-lisbon.jpg" alt="University of Lisbon" class="education-image">
+                        <div class="education-content">
+                            <h3 class="education-title">University of Lisbon</h3>
+                            <p class="education-description">Portugal's largest and most prestigious university with over 700 years of history</p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-card">
+                        <img src="src/assets/university-porto.jpg" alt="University of Porto" class="education-image">
+                        <div class="education-content">
+                            <h3 class="education-title">University of Porto</h3>
+                            <p class="education-description">Leading research university known for engineering and medical programs</p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-card">
+                        <img src="src/assets/university-nova.jpg" alt="NOVA University" class="education-image">
+                        <div class="education-content">
+                            <h3 class="education-title">NOVA University</h3>
+                            <p class="education-description">Modern university with strong international programs and partnerships</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Healthcare Section -->
+        <section class="healthcare-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Excellence in Healthcare</h2>
+                    <p class="section-subtitle">Access to world-class medical facilities and specialists</p>
+                </div>
+                
+                <div class="healthcare-grid">
+                    <div class="healthcare-card">
+                        <img src="src/assets/hospital-luz.jpg" alt="Hospital da Luz" class="healthcare-image">
+                        <div class="healthcare-content">
+                            <h3 class="healthcare-title">Hospital da Luz</h3>
+                            <p class="healthcare-description">Premium private healthcare with state-of-the-art facilities</p>
+                        </div>
+                    </div>
+                    
+                    <div class="healthcare-card">
+                        <img src="src/assets/hospital-cuf.jpg" alt="CUF Hospitals" class="healthcare-image">
+                        <div class="healthcare-content">
+                            <h3 class="healthcare-title">CUF Hospitals</h3>
+                            <p class="healthcare-description">Leading private hospital network with comprehensive medical services</p>
+                        </div>
+                    </div>
+                    
+                    <div class="healthcare-card">
+                        <img src="src/assets/hospital-lusiadas.jpg" alt="Lusíadas Saúde" class="healthcare-image">
+                        <div class="healthcare-content">
+                            <h3 class="healthcare-title">Lusíadas Saúde</h3>
+                            <p class="healthcare-description">Prestigious healthcare group with specialized medical centers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience Portugal</h2>
+                    <p class="section-subtitle">Discover the beauty and lifestyle that awaits you</p>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="src/assets/portugal-coast.jpg" alt="Portuguese Coast" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Stunning Coastline</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="src/assets/portugal-architecture.jpg" alt="Portuguese Architecture" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Rich History</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="src/assets/portugal-lifestyle.jpg" alt="Portuguese Lifestyle" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Quality of Life</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Success Stories</h2>
+                    <p class="section-subtitle">Hear from families who made Portugal their home</p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"CommuniQ made our move to Portugal seamless. Their expertise in the Golden Visa process was invaluable."</p>
+                            <div class="testimonial-author">
+                                <img src="src/assets/testimonial-maria.jpg" alt="Maria Silva" class="author-image">
+                                <div class="author-info">
+                                    <h4 class="author-name">Maria Silva</h4>
+                                    <span class="author-title">Golden Visa Recipient</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Thanks to their guidance, we found the perfect school for our children and a beautiful home in Lisbon."</p>
+                            <div class="testimonial-author">
+                                <img src="src/assets/testimonial-joao.jpg" alt="João Santos" class="author-image">
+                                <div class="author-info">
+                                    <h4 class="author-name">João Santos</h4>
+                                    <span class="author-title">Family Relocation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Professional, reliable, and truly committed to helping us achieve our Portugal dreams."</p>
+                            <div class="testimonial-author">
+                                <img src="src/assets/testimonial-ahmed.jpg" alt="Ahmed Hassan" class="author-image">
+                                <div class="author-info">
+                                    <h4 class="author-name">Ahmed Hassan</h4>
+                                    <span class="author-title">D7 Visa Success</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Start Your Journey Today</h2>
+                    <p class="section-subtitle">Get in touch for a personalized consultation</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>info@passportu.eu</p>
+                                <p>info@aviangroupco.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+994 77 233 3838</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Baku, Azerbaijan</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <button class="contact-cta" onclick="window.location.href='contact.html'">
+                            Get Free Consultation
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <span>C</span>
+                        </div>
+                        <span class="footer-logo-text">CommuniQ</span>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner for Portugal immigration and relocation services.
+                    </p>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <div class="footer-contacts">
+                        <div class="footer-contact">
+                            <i class="fas fa-envelope footer-contact-icon"></i>
+                            <div class="footer-contact-text">
+                                <div>info@passportu.eu</div>
+                                <div>info@aviangroupco.com</div>
+                            </div>
+                        </div>
+                        <div class="footer-contact">
+                            <i class="fas fa-phone footer-contact-icon"></i>
+                            <span class="footer-contact-text">+994 77 233 3838</span>
+                        </div>
+                        <div class="footer-contact">
+                            <i class="fas fa-map-marker-alt footer-contact-icon"></i>
+                            <span class="footer-contact-text">Baku, Azerbaijan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-services">
+                        <li>Golden Visa Program</li>
+                        <li>D7 Visa Support</li>
+                        <li>Real Estate Guidance</li>
+                        <li>Banking Setup</li>
+                        <li>Education Services</li>
+                        <li>Healthcare Orientation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2025 CommuniQ.com. All rights reserved. 
+                    <a href="https://techub.az" target="_blank" rel="noopener noreferrer" class="footer-link">
+                        Techub.az
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Visa Modal -->
+    <div class="modal-overlay" id="visaModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeVisaModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h2 class="modal-title">Ready to Start Your Portugal Journey?</h2>
+                <p class="modal-subtitle">Get expert guidance for your visa application</p>
+            </div>
+            <div class="modal-body">
+                <div class="visa-options">
+                    <div class="visa-option">
+                        <div class="visa-icon golden">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>Golden Visa</h3>
+                        <p>Investment-based residency</p>
+                    </div>
+                    <div class="visa-option">
+                        <div class="visa-icon d7">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>D7 Visa</h3>
+                        <p>Passive income residents</p>
+                    </div>
+                    <div class="visa-option">
+                        <div class="visa-icon nomad">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Digital Nomad</h3>
+                        <p>Remote work visa</p>
+                    </div>
+                </div>
+                <button class="modal-cta" onclick="window.location.href='contact.html'">
+                    Schedule Free Consultation
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
