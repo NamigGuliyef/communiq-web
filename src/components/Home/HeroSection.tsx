@@ -32,14 +32,14 @@ const HeroSection = () => {
       {/* Content */}
       <div className="container mx-auto px-4 text-center text-white relative z-10">
         <div className="max-w-4xl mx-auto">
-          <h1 className="mt-4 text-3xl md:text-5xl font-bold mb-6 leading-tight">
+          <h1 className="mt-4 text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Your Portugal Journey Starts Here
           </h1>
-          <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed max-w-3xl mx-auto">
             TO ENSURE INDIVIDUALS AND FAMILIES START A NEW LIFE IN PORTUGAL — SAFELY, LEGALLY, AND COMFORTABLY. WE SUPPORT OUR CLIENTS AT EVERY STAGE, FROM VISA APPLICATION TO FULL SETTLEMENT.
           </p>
           <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 mb-8 max-w-4xl mx-auto">
-            <h3 className="text-lg font-semibold mb-4 text-portugal-gold">Our Vision</h3>
+            <h3 className="text-xl font-semibold mb-4 text-portugal-gold">Our Vision</h3>
             <p className="text-gray-200">
               TO BECOME THE MOST TRUSTED AND PROFESSIONAL PARTNER IN THE FIELD OF RELOCATION AND IMMIGRATION ACROSS THE EUROPEAN UNION. WE DON'T JUST HANDLE PAPERWORK — WE GUIDE PEOPLE THROUGH A MAJOR LIFE TRANSITION.
             </p>

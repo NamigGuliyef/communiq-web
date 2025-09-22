@@ -7,10 +7,6 @@ import universityNova from '@/assets/university-nova.jpg';
 import universityCatholic from '@/assets/university-catholic.jpg';
 import universityCoimbra from '@/assets/university-coimbra.jpg';
 import universityIscte from '@/assets/university-iscte.jpg';
-import schoolStJulians from '@/assets/school-stjulians.jpg';
-import schoolCarlucci from '@/assets/school-carlucci.jpg';
-import universityNovaLisbon from '@/assets/university-nova-lisbon.jpg';
-import universityCatholicPortugal from '@/assets/university-catholic-portugal.jpg';
 
 const EducationSection = () => {
   const { t } = useLanguage();
@@ -21,21 +17,21 @@ const EducationSection = () => {
       description: 'One of Europe\'s oldest British schools (since 1932). Alumni admitted to Oxford, LSE, UCL. Offers IB, British diploma programs.',
       ranking: 'British Heritage',
       icon: GraduationCap,
-      image: schoolStJulians
+      image: universityLisbon
     },
     {
       name: 'CAISL - American International School',
       description: 'IB and American curricula with graduates in Harvard, MIT, Columbia. 100% English-language instruction with university counseling.',
       ranking: 'American Excellence',
       icon: Award,
-      image: schoolCarlucci
+      image: universityPorto
     },
     {
       name: 'Oporto British School',
       description: 'Top-tier Cambridge-accredited institution in Northern Portugal. Over 90% university placement rate in UK, US, and EU.',  
       ranking: 'Cambridge Accredited',
       icon: Star,
-      image: universityPorto
+      image: universityNova
     }
   ];
 
@@ -52,14 +48,14 @@ const EducationSection = () => {
       description: 'Featured in "QS Top 50 Under 50". Modern university with innovative programs and strong international partnerships.',
       ranking: 'QS Top 50 Under 50',
       icon: Star,
-      image: universityNovaLisbon
+      image: universityNova
     },
     {
       name: 'Catholic University of Portugal',
       description: 'Globally ranked by Financial Times for business and law programs. High graduate employment rates.',
       ranking: 'FT Global Rankings',
       icon: Globe,
-      image: universityCatholicPortugal
+      image: universityCatholic
     },
     {
       name: 'University of Porto',
