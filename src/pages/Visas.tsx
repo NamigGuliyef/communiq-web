@@ -13,12 +13,14 @@ const Visas = () => {
     {
       icon: DollarSign,
       title: 'D7 Visa (Passive Income)',
-      subtitle: 'For those with passive income',
+      subtitle: 'For individuals with passive income: rent, pension, royalties, interest',
       features: [
-        'No investment required',
+        'No large investment required',
+        'Full legal residency in Portugal',
+        'Schengen access',
         'Citizenship after 5 years',
-        'Family included',
-        'For passive income holders (rent, pension, royalty)'
+        'Includes spouse and dependent children',
+        'Retirees, property owners, investors'
       ],
       process: [
         'Income documentation',
@@ -30,14 +32,37 @@ const Visas = () => {
       color: 'from-green-500 to-emerald-600'
     },
     {
+      icon: Laptop,
+      title: 'D7 Visa (Digital Nomad)',
+      subtitle: 'For freelancers and remote workers with valid contracts',
+      features: [
+        'Live in Portugal while working remotely',
+        'Legal stay based on service agreement',
+        'Path to citizenship',
+        'Includes family',
+        'Full relocation support',
+        'Academics, creatives, service providers'
+      ],
+      process: [
+        'Remote work proof',
+        'Valid contracts with foreign clients',
+        'Income verification',
+        'Health insurance',
+        'Application and approval'
+      ],
+      color: 'from-blue-500 to-purple-600'
+    },
+    {
       icon: Star,
       title: 'Golden Visa',
-      subtitle: 'For investors seeking EU citizenship',
+      subtitle: 'For investors seeking EU citizenship or permanent residency',
       features: [
-        '7 days/year stay requirement',
-        'Citizenship after 5 years',
-        'Tax flexibility',
-        'Investment-based residency'
+        'Only 7 days/year of presence in Portugal required',
+        'No tax residency obligation',
+        'Apply for citizenship after 5 years',
+        'One investment covers the entire family',
+        '€500k in investment funds or €250k donation',
+        'Full Schengen access and freedom of movement'
       ],
       process: [
         'Investment selection',
@@ -47,25 +72,6 @@ const Visas = () => {
         'Residence card issuance'
       ],
       color: 'from-yellow-500 to-orange-600'
-    },
-    {
-      icon: Laptop,
-      title: 'Digital Nomad Visa',
-      subtitle: 'For freelancers and remote workers',
-      features: [
-        'Live and work in Portugal',
-        'Family relocation together',
-        'Flexible work arrangements',
-        'Access to EU markets'
-      ],
-      process: [
-        'Remote work proof',
-        'Income verification',
-        'Health insurance',
-        'Criminal record check',
-        'Application and approval'
-      ],
-      color: 'from-blue-500 to-purple-600'
     }
   ];
 
@@ -76,7 +82,7 @@ const Visas = () => {
         {/* Hero Section */}
         <SectionBanner
           title={t('page.visas.title')}
-          subtitle={"Choose the right visa type for your Portugal journey"}
+          subtitle={"Legal pathway to live in Portugal and the EU. Visa-free travel across the entire Schengen Area. Choose the route: income-based or investment-based."}
         />
 
         {/* Visa Types */}

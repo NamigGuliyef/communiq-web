@@ -44,22 +44,22 @@ const Investment = () => {
 
   const investmentTypes = [
     {
-      icon: Building,
-      title: 'Real Estate Investment',
-      description: 'Golden Visa eligible properties across prime locations',
-      benefits: ['Residency qualification', 'Rental income potential', 'Capital appreciation']
+      icon: TrendingUp,
+      title: 'Curated Investment Opportunities',
+      description: 'Government-approved private equity and venture capital funds. CMVM-regulated structures.',
+      benefits: ['No real estate maintenance', 'Professional fund management', 'Diversified portfolios', 'Early return distributions', 'Golden Visa pathway']
     },
     {
-      icon: TrendingUp,
-      title: 'Investment Funds',
-      description: 'Government-approved funds for Golden Visa',
-      benefits: ['Professional management', 'Diversified portfolio', 'Lower entry threshold']
+      icon: Building,
+      title: 'Real Estate Investment',
+      description: 'Golden Visa eligible properties across prime locations. Finance up to 70% with mortgage support.',
+      benefits: ['Residency qualification', 'Rental income potential', 'Capital appreciation', 'Off-market access', 'Full lifecycle support']
     },
     {
       icon: Home,
       title: 'Development Projects',
-      description: 'New construction and renovation projects',
-      benefits: ['Pre-construction pricing', 'Customization options', 'Modern amenities']
+      description: 'New construction and renovation projects in emerging value zones.',
+      benefits: ['Pre-construction pricing', 'Customization options', 'Modern amenities', 'Emerging markets', 'Development partnerships']
     }
   ];
 
@@ -79,7 +79,7 @@ const Investment = () => {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-foreground mb-4">Investment Options</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Choose from various investment vehicles that qualify for Golden Visa residency
+                Why fund-based Golden Visa investments? Audited, CMVM-regulated structures with diversification across tech, real estate, energy, and innovation sectors. Passive income and capital appreciation potential.
               </p>
             </div>
 

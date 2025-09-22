@@ -122,9 +122,121 @@ const Services = () => {
           </div>
         );
 
+      case 'Mortgage & Loan Facilitation':
+        return (
+          <div className="space-y-4">
+            <div className="space-y-4">
+              <h4 className="font-semibold text-lg text-foreground">For Real Estate Buyers:</h4>
+              <ul className="space-y-3 text-sm">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Finance up to 70% of your property value, even as a non-resident</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Interest rates from 2.5% to 4.5%, with terms up to 30 years</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Full assistance in valuation, insurance, legal due diligence</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Mortgage approval tailored to Golden Visa timelines</span>
+                </li>
+              </ul>
+
+              <h4 className="font-semibold text-lg text-foreground mt-6">For Business Owners:</h4>
+              <ul className="space-y-3 text-sm">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Access startup or expansion capital through business loan programs</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Navigate Portuguese public financing programs and soft loans</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Direct relationships with Portugal's top banks – reducing approval times</span>
+                </li>
+              </ul>
+
+              <div className="bg-tile-cream p-4 rounded-lg mt-6">
+                <p className="text-sm italic text-center text-muted-foregroundleading-relaxed">
+                  <strong>Client Success:</strong> A family of 4 acquired a €420,000 home in Cascais with only €126,000 down and got Golden Visa approval. Clients receive approvals within 15–20 days.
+                </p>
+              </div>
+            </div>
+          </div>
+        );
+
+      case 'Banking Setup':
+        return (
+          <div className="space-y-4">
+            <div className="space-y-4">
+              <h4 className="font-semibold text-lg text-foreground">Why it matters:</h4>
+              <ul className="space-y-3 text-sm">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Required for Golden Visa & D7 applications</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Proof of funds and source of income</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Essential for business operations: payments, payroll, tax compliance</span>
+                </li>
+              </ul>
+
+              <h4 className="font-semibold text-lg text-foreground mt-6">What We Offer:</h4>
+              <ul className="space-y-3 text-sm">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Direct introductions to top banks: Millennium BCP, Novo Banco, Santander</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Pre-arranged relationship managers for English-speaking service</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Typical timeline: 5–7 business days</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        );
       case 'Real Estate Guidance':
         return (
           <div className="space-y-4">
+            <div className="space-y-4">
+              <h4 className="font-semibold text-lg text-foreground">What we help you do:</h4>
+              <ul className="space-y-3 text-sm">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Identify residency-eligible properties (Golden Visa compliant, D7-compatible)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Search across Lisbon, Porto, Algarve, Cascais, Setúbal and emerging value zones</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Access to off-market deals, developer inventory, and distressed assets</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Assess long-term rental yield, appreciation potential, and resale liquidity</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Navigate the full lifecycle: reservation → CPCV → notary → registry</span>
+                </li>
+              </ul>
+            </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-3">
                 <h4 className="font-semibold text-foreground">Investment Regions:</h4>
@@ -150,6 +262,149 @@ const Services = () => {
               <div className="space-y-2">
                 <img src={portugalArchitecture} alt="Portugal Architecture" className="w-full h-24 object-cover rounded-lg" />
               </div>
+            </div>
+          </div>
+        );
+
+      case 'Investment Opportunities':
+        return (
+          <div className="space-y-4">
+            <div className="space-y-4">
+              <h4 className="font-semibold text-lg text-foreground">Why fund-based Golden Visa investments?</h4>
+              <ul className="space-y-3 text-sm">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Government-approved private equity and venture capital funds</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Audited, CMVM-regulated (Portuguese Securities Market Commission) structures</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Diversification across tech, real estate, energy, and innovation sectors</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>No need to purchase real estate or deal with tenants</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Early return distributions available within the first 6–12 months</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        );
+
+      case 'Corporate Structuring':
+        return (
+          <div className="space-y-4">
+            <div className="space-y-4">
+              <h4 className="font-semibold text-lg text-foreground">What We Offer:</h4>
+              <ul className="space-y-3 text-sm">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Company registration (LDA, SA, or branch office) with full regulatory compliance</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Strategic corporate structuring to optimize tax efficiency</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Full setup of NIF, VAT, social security, and corporate banking</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Support Golden Visa pathways through business structure</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        );
+
+      case 'Legal & Documentation':
+        return (
+          <div className="space-y-4">
+            <div className="space-y-4">
+              <h4 className="font-semibold text-lg text-foreground">What We Offer:</h4>
+              <ul className="space-y-3 text-sm">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Preparation of all necessary visa, residency, and citizenship documents</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Certified translations, apostilles, and embassy coordination</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Full representation with AIMA (Portuguese Immigration Agency)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Consulate appointment scheduling and biometric guidance</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        );
+
+      case 'Community Integration':
+        return (
+          <div className="space-y-4">
+            <div className="space-y-4">
+              <h4 className="font-semibold text-lg text-foreground">What We Offer:</h4>
+              <ul className="space-y-3 text-sm">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Introductions to expat circles, diaspora networks, and business associations</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Access to English-speaking professionals: doctors, lawyers, mentors</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Family support: parenting groups, private school communities</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Local life tips: where to live, shop, network, and thrive</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        );
+
+      case 'Tour Package':
+        return (
+          <div className="space-y-4">
+            <div className="space-y-4">
+              <h4 className="font-semibold text-lg text-foreground">What's Included:</h4>
+              <ul className="space-y-3 text-sm">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>3–5 day guided tour across key locations: Lisbon, Cascais, Porto, Setúbal, Algarve</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Property visits (residential & investment-focused), schools, clinics</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Bank appointments, real estate briefings, and legal consultations</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Meetings with expat families, business owners, and relocation experts</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-portugal-gold mt-0.5 flex-shrink-0" />
+                  <span>Airport pickup, hotel recommendations, and optional private driver</span>
+                </li>
+              </ul>
             </div>
           </div>
         );
