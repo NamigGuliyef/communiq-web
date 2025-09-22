@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { ArrowRight, Shield, Heart, Globe, MapPin } from 'lucide-react';
-import { useLanguage } from '@/hooks/useLanguage';
-import ApplicationRoadmapModal from '@/components/ApplicationRoadmapModal';
-import portugalVideo from '@/assets/portugal-video.mp4'; // <- Add your video here
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Shield, Heart, Globe, MapPin } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
+import ApplicationRoadmapModal from "@/components/ApplicationRoadmapModal";
+import portugalVideo from "@/assets/portugal-video.mp4"; // <- Add your video here
 
 const HeroSection = () => {
   const { t, language } = useLanguage();
@@ -32,25 +32,33 @@ const HeroSection = () => {
       {/* Content */}
       <div className="container mx-auto px-4 text-center text-white relative z-10">
         <div className="max-w-4xl mx-auto">
-          <h1 className="mt-4 text-3xl md:text-4xl font-bold mb-4 leading-snug">
+          <h1 className="mt-4 text-3xl md:text-5xl font-bold mb-4 leading-snug">
             Your Portugal Journey Starts Here
           </h1>
-          <p className="text-lg md:text-xl mb-6 text-gray-200 leading-relaxed max-w-3xl mx-auto">
-            TO ENSURE INDIVIDUALS AND FAMILIES START A NEW LIFE IN PORTUGAL — SAFELY, LEGALLY, AND COMFORTABLY. WE SUPPORT OUR CLIENTS AT EVERY STAGE, FROM VISA APPLICATION TO FULL SETTLEMENT.
+          <p className="text-lg md:text-x mb-6 text-gray-200 leading-relaxed max-w-3xl mx-auto">
+            TO ENSURE INDIVIDUALS AND FAMILIES START A NEW LIFE IN PORTUGAL —
+            SAFELY, LEGALLY, AND COMFORTABLY. WE SUPPORT OUR CLIENTS AT EVERY
+            STAGE, FROM VISA APPLICATION TO FULL SETTLEMENT, WITH A PERSONALIZED
+            APPROACH TAILORED TO EACH NEED.
           </p>
           <div className="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/20 mb-6 max-w-4xl mx-auto">
-            <h3 className="text-lg font-semibold mb-3 text-portugal-gold">Our Vision</h3>
+            <h3 className="text-lg font-semibold mb-3 text-portugal-gold">
+              Our Vision
+            </h3>
             <p className="text-gray-200 text-base">
-              TO BECOME THE MOST TRUSTED AND PROFESSIONAL PARTNER IN THE FIELD OF RELOCATION AND IMMIGRATION ACROSS THE EUROPEAN UNION. WE DON'T JUST HANDLE PAPERWORK — WE GUIDE PEOPLE THROUGH A MAJOR LIFE TRANSITION.
+              TO BECOME THE MOST TRUSTED AND PROFESSIONAL PARTNER IN THE FIELD
+              OF RELOCATION AND IMMIGRATION ACROSS THE EUROPEAN UNION. WE DON’T
+              JUST HANDLE PAPERWORK — WE GUIDE PEOPLE THROUGH A MAJOR LIFE
+              TRANSITION.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
             <Button
               size="lg"
               className="bg-portugal-gold hover:bg-portugal-gold/90 text-portugal-gold-foreground text-base px-6 py-4 rounded-xl shadow-portugal"
-              onClick={() => (window.location.href = '/contact')}
+              onClick={() => (window.location.href = "/contact")}
             >
-              {t('hero.cta')}
+              {t("hero.cta")}
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
             <Button
@@ -60,7 +68,7 @@ const HeroSection = () => {
               onClick={() => setShowRoadmapModal(true)}
             >
               <MapPin className="mr-2 w-4 h-4" />
-              {language === 'az' ? 'Müraciət Xəritəsi' : 'Application Roadmap'}
+              {language === "az" ? "Müraciət Xəritəsi" : "Application Roadmap"}
             </Button>
           </div>
 
@@ -68,18 +76,26 @@ const HeroSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12">
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/20">
               <Shield className="w-6 h-6 text-portugal-gold mx-auto mb-2" />
-              <h3 className="font-semibold text-base mb-1">7th Safest Country</h3>
+              <h3 className="font-semibold text-base mb-1">
+                7th Safest Country
+              </h3>
               <p className="text-sm text-gray-200">Global Peace Index 2024</p>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/20">
               <Heart className="w-6 h-6 text-portugal-gold mx-auto mb-2" />
-              <h3 className="font-semibold text-base mb-1">3rd Safest in Europe</h3>
+              <h3 className="font-semibold text-base mb-1">
+                3rd Safest in Europe
+              </h3>
               <p className="text-sm text-gray-200">European Safety Rankings</p>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/20">
               <Globe className="w-6 h-6 text-portugal-gold mx-auto mb-2" />
-              <h3 className="font-semibold text-base mb-1">Most Welcoming Society</h3>
-              <p className="text-sm text-gray-200">European Social Survey 2022</p>
+              <h3 className="font-semibold text-base mb-1">
+                Most Welcoming Society
+              </h3>
+              <p className="text-sm text-gray-200">
+                European Social Survey 2022
+              </p>
             </div>
           </div>
         </div>

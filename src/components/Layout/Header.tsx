@@ -1,14 +1,14 @@
-import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Menu, X, Globe } from 'lucide-react';
-import { useLanguage } from '@/hooks/useLanguage';
-import { Link, useLocation } from 'react-router-dom';
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X, Globe } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
+import { Link, useLocation } from "react-router-dom";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+} from "@/components/ui/dropdown-menu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,21 +16,36 @@ const Header = () => {
   const location = useLocation();
 
   const navLinks = [
-    { href: '/', label: t('nav.home') },
-    { href: '/services', label: t('nav.services') },
-    { href: '/visas', label: t('nav.visas') },
-    { href: '/investment', label: t('nav.investment') },
-    { href: '/education', label: t('nav.education') },
-    { href: '/contact', label: t('nav.contact') },
+    { href: "/", label: t("nav.home") },
+    { href: "/services", label: t("nav.services") },
+    { href: "/visas", label: t("nav.visas") },
+    { href: "/investment", label: t("nav.investment") },
+    { href: "/education", label: t("nav.education") },
+    { href: "/contact", label: t("nav.contact") },
   ];
 
   const languages = [
-    { code: 'en', name: 'English', flag: 'https://twemoji.maxcdn.com/v/latest/72x72/1f1fa-1f1f8.png' }, // 🇺🇸
-    { code: 'az', name: 'Azərbaycan', flag: 'https://twemoji.maxcdn.com/v/latest/72x72/1f1e6-1f1ff.png' }, // 🇦🇿
-    { code: 'ru', name: 'Русский', flag: 'https://twemoji.maxcdn.com/v/latest/72x72/1f1f7-1f1fa.png' }, // 🇷🇺
-    { code: 'pt', name: 'Português', flag: 'https://twemoji.maxcdn.com/v/latest/72x72/1f1f5-1f1f9.png' }, // 🇵🇹
+    {
+      code: "en",
+      name: "English",
+      flag: "https://twemoji.maxcdn.com/v/latest/72x72/1f1fa-1f1f8.png",
+    }, // 🇺🇸
+    {
+      code: "az",
+      name: "Azərbaycan",
+      flag: "https://twemoji.maxcdn.com/v/latest/72x72/1f1e6-1f1ff.png",
+    }, // 🇦🇿
+    {
+      code: "ru",
+      name: "Русский",
+      flag: "https://twemoji.maxcdn.com/v/latest/72x72/1f1f7-1f1fa.png",
+    }, // 🇷🇺
+    {
+      code: "pt",
+      name: "Português",
+      flag: "https://twemoji.maxcdn.com/v/latest/72x72/1f1f5-1f1f9.png",
+    }, // 🇵🇹
   ];
-
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-sm">
@@ -39,13 +54,11 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <div className="w-8 h-8 flex items-center justify-center relative">
-              <svg viewBox="0 0 600 400" className="w-6 h-4">
-                <rect width="600" height="400" fill="transparent" />
-                <rect width="240" height="400" fill="#DA020E" />
-                <rect x="240" width="360" height="400" fill="#046A38" />
-                <circle cx="240" cy="200" r="50" fill="#FFE900" stroke="#046A38" strokeWidth="3" />
-              </svg>
-              <span className="absolute -top-1 -right-1 text-xs">🇵🇹</span>
+              <img
+                src="/communiq-logo.png" // Şəkil faylınızın yolu
+                alt="Flag"
+                className="w-6 h-6 object-cover"
+              />
             </div>
             <span className="text-xl font-bold text-primary">CommuniQ</span>
           </div>
@@ -57,8 +70,9 @@ const Header = () => {
                 <Link
                   key={link.href}
                   to={link.href}
-                  className={`text-foreground hover:text-primary transition-colors duration-200 font-medium ${isActive ? 'text-primary border-b-2 border-primary' : ''
-                    }`}
+                  className={`text-foreground hover:text-primary transition-colors duration-200 font-medium ${
+                    isActive ? "text-primary border-b-2 border-primary" : ""
+                  }`}
                 >
                   {link.label}
                 </Link>
@@ -73,18 +87,26 @@ const Header = () => {
                 <Button variant="outline" size="sm" className="gap-2">
                   <Globe className="w-4 h-4" />
                   <span className="hidden sm:inline">
-                    {languages.find(lang => lang.code === language)?.name}
+                    {languages.find((lang) => lang.code === language)?.name}
                   </span>
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent style={{ backgroundColor: 'white' }} align="end">
+              <DropdownMenuContent
+                style={{ backgroundColor: "white" }}
+                align="end"
+              >
                 {languages.map((lang) => (
                   <DropdownMenuItem
                     key={lang.code}
                     onClick={() => setLanguage(lang.code as any)}
                     className="gap-2"
                   >
-                    <img src={lang.flag} alt={lang.code} width={20} height={20} />
+                    <img
+                      src={lang.flag}
+                      alt={lang.code}
+                      width={20}
+                      height={20}
+                    />
                     <span>{lang.name}</span>
                   </DropdownMenuItem>
                 ))}
@@ -98,7 +120,11 @@ const Header = () => {
               className="lg:hidden"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {isMenuOpen ? (
+                <X className="w-5 h-5" />
+              ) : (
+                <Menu className="w-5 h-5" />
+              )}
             </Button>
           </div>
         </div>
@@ -113,8 +139,9 @@ const Header = () => {
                   <Link
                     key={link.href}
                     to={link.href}
-                    className={`px-2 py-2 text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors duration-200 ${isActive ? 'text-primary bg-secondary' : ''
-                      }`}
+                    className={`px-2 py-2 text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors duration-200 ${
+                      isActive ? "text-primary bg-secondary" : ""
+                    }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {link.label}
