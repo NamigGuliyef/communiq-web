@@ -39,7 +39,7 @@ const Index = () => {
         </FadeInWhenVisible>
 
         <FadeInWhenVisible>
-          <ServicesSection cartStyle={2} />
+          <ServicesSection cartStyle={1} />
         </FadeInWhenVisible>
 
         <FadeInWhenVisible>
