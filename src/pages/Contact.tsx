@@ -38,7 +38,7 @@ const Contact = () => {
     const visaLabel = visaTypes.find((v) => v.value === formData.visaType)?.label || '';
     const message = `I am interested in "${visaLabel}".`;
 
-    const whatsappNumber = '994772333838'; // No '+' or spaces
+    const whatsappNumber = '994772337272'; // No '+' or spaces
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappURL, '_blank');
@@ -116,11 +116,8 @@ const Contact = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                        <a href="mailto:info@passportu.eu" className="text-muted-foreground hover:text-primary transition-colors block">
-                          info@passportu.eu
-                        </a>
-                        <a href="mailto:info@aviangroupco.com" className="text-muted-foreground hover:text-primary transition-colors block">
-                          info@aviangroupco.com
+                        <a href="mailto:info@communiq.net" className="text-muted-foreground hover:text-primary transition-colors block">
+                          info@communiq.net
                         </a>
                       </div>
                     </div>
@@ -131,8 +128,8 @@ const Contact = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold text-foreground mb-1">Phone</h4>
-                        <a href="tel:+994772333838" className="text-muted-foreground hover:text-primary transition-colors">
-                          +994 77 233 3838
+                        <a href="tel:+994772337272" className="text-muted-foreground hover:text-primary transition-colors">
+                          +994 77 233 72 72
                         </a>
                       </div>
                     </div>

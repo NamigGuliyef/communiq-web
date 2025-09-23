@@ -12,8 +12,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-portugal-gold rounded-lg flex items-center justify-center">
-                <span className="text-portugal-gold-foreground font-bold text-sm">C</span>
+               <div className="w-8 h-8 flex items-center justify-center relative">
+                  <img
+                src="/communiq-logo.png" // Şəkil faylınızın yolu
+                alt="Flag"
+                className="w-6 h-6 object-cover"
+              />
               </div>
               <span className="text-xl font-bold">CommuniQ</span>
             </div>
@@ -43,25 +47,22 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-portugal-gold" />
                 <div className="text-sm">
-                  <a href="mailto:info@passportu.eu" className="hover:text-portugal-gold transition-colors">
-                    info@passportu.eu
+                  <a href="mailto:info@communiq.net" className="hover:text-portugal-gold transition-colors">
+                    info@communiq.net
                   </a>
-                  <br />
-                  <a href="mailto:info@aviangroupco.com" className="hover:text-portugal-gold transition-colors">
-                    info@aviangroupco.com
-                  </a>
+            
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-portugal-gold" />
-                <a href="tel:+994772333838" className="text-sm hover:text-portugal-gold transition-colors">
-                  +994 77 233 3838
+                <a href="tel:+994772337272" className="text-sm hover:text-portugal-gold transition-colors">
+                  +994 77 233 72 72
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <MessageCircle className="w-4 h-4 text-portugal-gold" />
                 <a 
-                  href="https://wa.me/994772333838" 
+                  href="https://wa.me/994772337272" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-sm hover:text-portugal-gold transition-colors"

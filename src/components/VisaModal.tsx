@@ -1,4 +1,6 @@
-import { useState, useEffect } from 'react';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Dialog,
   DialogContent,
@@ -6,11 +8,8 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { X, Star, Clock, Users, Plane, Building, Heart, GraduationCap } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
+import { Building, Clock, GraduationCap, Heart, Plane, Star, Users } from 'lucide-react';
 
 interface VisaModalProps {
   isOpen: boolean;
@@ -98,16 +97,16 @@ const VisaModal = ({ isOpen, onClose }: VisaModalProps) => {
                     </div>
                     <CardTitle className="text-lg">{visa.name}</CardTitle>
                   </CardHeader>
-                  <CardContent className="space-y-3">
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <CardContent className="space-y-3 justify-between">
+                    <div className="min-h-[20px] flex items-center gap-2 text-sm text-muted-foreground">
                       <Clock className="w-4 h-4" />
                       <span>{visa.duration}</span>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <div className="min-h-[40px] flex items-center gap-2 text-sm text-muted-foreground">
                       <Users className="w-4 h-4" />
                       <span>{visa.forWho}</span>
                     </div>
-                    <CardDescription className="text-sm">
+                    <CardDescription className="min-h-[50px] text-sm">
                       {visa.description}
                     </CardDescription>
                     <div className="space-y-1">
@@ -142,13 +141,13 @@ const VisaModal = ({ isOpen, onClose }: VisaModalProps) => {
                 Get Free Consultation
               </Button>
               <Button
-                variant="outline"
+                variant="secondary"
                 size="lg"
+                className="bg-white text-primary hover:bg-white/90"
                 onClick={() => {
                   onClose();
                   window.location.href = '/visas';
                 }}
-                className="border-white text-white hover:bg-white/10"
               >
                 Explore All Visas
               </Button>

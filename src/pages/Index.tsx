@@ -11,15 +11,23 @@ import Header from '@/components/Layout/Header';
 import VisaModal from '@/components/VisaModal';
 import { useState, useEffect } from 'react';
 
-
+const LS_COMUNIQ = "communiq-lastseen-hour"
 const Index = () => {
   const [showVisaModal, setShowVisaModal] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const lastSeen = +localStorage.getItem(LS_COMUNIQ);
+    if (lastSeen) {
+      const currHour = (new Date()).getHours();
+      if (currHour > lastSeen) {
+        setShowVisaModal(true);
+        localStorage.setItem(LS_COMUNIQ, currHour + '');
+      }
+    } else {
       setShowVisaModal(true);
-    }, 3000);
-    return () => clearTimeout(timer);
+      const _lastSeen = (new Date()).getHours().toString();
+      localStorage.setItem(LS_COMUNIQ, _lastSeen);
+    }
   }, []);
 
   return (
@@ -31,7 +39,7 @@ const Index = () => {
         </FadeInWhenVisible>
 
         <FadeInWhenVisible>
-          <ServicesSection />
+          <ServicesSection cartStyle={2} />
         </FadeInWhenVisible>
 
         <FadeInWhenVisible>

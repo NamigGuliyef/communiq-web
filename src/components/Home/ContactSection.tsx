@@ -25,7 +25,7 @@ const ContactSection = () => {
     const visaLabel = visaTypes.find((v) => v.value === formData.visaType)?.label || '';
     const message = `I am interested in "${visaLabel}"`;
 
-    const phoneNumber = '+994772333838'; // Replace with your target WhatsApp number, no spaces or '+' if needed
+    const phoneNumber = '+994772337272'; // Replace with your target WhatsApp number, no spaces or '+' if needed
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappURL, '_blank');
@@ -99,8 +99,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white">Email</h3>
-                    <p className="text-white/80">info@passportu.eu</p>
-                    <p className="text-white/80">info@aviangroupco.com</p>
+                    <p className="text-white/80">info@communiq.net</p>
                   </div>
                 </div>
               </CardContent>
@@ -114,7 +113,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white">{t('contact.phone')}</h3>
-                    <p className="text-white/80">+994 77 233 3838</p>
+                    <p className="text-white/80">+994 77 233 72 72</p>
                   </div>
                 </div>
               </CardContent>

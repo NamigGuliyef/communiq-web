@@ -87,7 +87,7 @@ const EmailPreview = ({ formData, onClose }: EmailPreviewProps) => {
                       </div>
                       <div className="flex items-center gap-2">
                         <Phone className="w-4 h-4" />
-                        <span>+994 77 233 3838</span>
+                        <span>+994 77 233 72 72</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <MapPin className="w-4 h-4" />
